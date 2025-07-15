@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokédex - Inicio</title>
+    <script src="js/autenticador.js" defer></script>
+    <script src="js/pokedex.js" defer></script>
+    <script src="js/crudUsuarios.js" defer></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav>
+        <span id="usuarioNombre">Bienvenido</span>
+        <button onclick="cerrarSesion()">Cerrar sesión</button>
+    </nav>
+
+    <main>
+        <section id="seccionAdmin" style="display:none;">
+            <h2>Gestión de Usuarios (Admin)</h2>
+            <button onclick="cargarUsuarios()">Actualizar lista</button>
+            <ul id="listaUsuarios"></ul>
+        </section>
+
+        <section id="seccionPokedex">
+            <h2>Pokédex</h2>
+            <div id="contenedorPokedex"></div>
+        </section>
+    </main>
+</body>
+</html>
